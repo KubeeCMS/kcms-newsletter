@@ -1,0 +1,22 @@
+{
+  "name": "kubeecms/newsletter",
+  "type": "wordpress-plugin",
+  "license": "GNU",
+  "description":
+    "Invoice order numbers ...",
+  "homepage": "https://github.com/KubeeCMS/newsletter/",
+  "keywords": ["kubeecms", "kubee", "kcms-invoice-order-numbers", "order-numbers"],
+  "support": {
+    "issues": "https://github.com/KubeeCMS/newsletter/issues/",
+    "forum": "https://discourse.kubee.com/"
+  },
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "scripts": {
+    "test": ["phpcs --ignore=vendor --extensions=php --standard=PSR2 ."]
+  }
+}
