@@ -1,4 +1,4 @@
-=== Newsletter===
+=== KCMS Newsletter===
 Contributors: KubeeCMS
 Tags: email newsletter, newsletter, newsletter signup, email signup, email marketing
 Requires at least: 4.6

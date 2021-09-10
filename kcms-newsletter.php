@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Newsletter
-Plugin URI: https://github.com/KubeeCMS/newsletter
+Plugin Name: KCMS Newsletter
+Plugin URI: https://github.com/KubeeCMS/kcms-newsletter
 Description: Send Beautiful Email Newsletters.
 Version: 3.0
 Author: KubeeCMS
