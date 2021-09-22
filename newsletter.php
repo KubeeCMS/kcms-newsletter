@@ -15,8 +15,8 @@ if ( defined( 'MAILSTER_VERSION' ) || ! defined( 'ABSPATH' ) ) {
 	return;
 }
 
-define( 'MAILSTER_VERSION', '3.0' );
-define( 'MAILSTER_BUILT', 1630227029 );
+define( 'MAILSTER_VERSION', '3.0.1' );
+define( 'MAILSTER_BUILT', 1632126772 );
 define( 'MAILSTER_DBVERSION', 20210901 );
 define( 'MAILSTER_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MAILSTER_URI', plugin_dir_url( __FILE__ ) );
@@ -48,3 +48,4 @@ if ( ! $mailster->wp_mail && mailster_option( 'system_mail' ) == 1 ) {
 		return mailster()->wp_mail( $to, $subject, $message, $headers, $attachments, $file, $template );
 	}
 }
+
