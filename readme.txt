@@ -1,9 +1,9 @@
-=== Newsletter===
-Contributors: KubeeCMS
+=== Mailster - Email Newsletter Plugin for WordPress ===
+Contributors: EverPress
 Tags: email newsletter, newsletter, newsletter signup, email signup, email marketing
 Requires at least: 4.6
 Tested up to: 5.8
-Stable tag: 3.0
+Stable tag: 3.0.1
 Author: EverPress
 Author URI: https://everpress.co
 License: GPLv2 or later
@@ -11,32 +11,32 @@ Requires PHP: 5.3.6
 
 == Description ==
 
-== Easy to use Email Newsletter. Create, send and track your Newsletter Campaigns without hassle. ==
+== Mailster is an easy to use Email Newsletter Plugin for WordPress. Create, send and track your Newsletter Campaigns without hassle. ==
 
 = Send Your Latest Posts, Products, Events or any other post type. =
-Lets you send all your posts, products, events or other custom post types. Every type can also be used for email automation.
+Mailster lets you send all your posts, products, events or other custom post types. Every type can also be used for email automation.
 
 
 = Welcome Your New Subscribers. =
-Set up your welcome series and leave the rest to newsletter.
+Set up your welcome series and leave the rest to Mailster.
 
-You sit back and focus on your business while makes sure your new subscribers feel welcome.
+You sit back and focus on your business while Mailster makes sure your new subscribers feel welcome.
 
 
 = Free and Premium Templates. =
-Offers you a choice of more than 400 free and premium designs.
+Mailster offers you a choice of more than 400 free and premium designs.
 
 Create stunning and engaging campaigns in minutes!
 
 
 = GDPR Compliance. =
-When it comes to GDPR compliance, Newsletter is your newsletter marketing tool of choice: Newsletter fully complies with GDPR requirements.
+When it comes to GDPR compliance, Mailster is your newsletter marketing tool of choice: Mailster fully complies with GDPR requirements.
 
 All your data is stored in your own database and is not transferred or shared with third parties.
 
 
 = Grow Without Limits. =
-With Newsletter there’s no limit in subscribers. For a one-time fee you can have as many subscribers as you want.
+With Mailster there’s no limit in subscribers. For a one-time fee you can have as many subscribers as you want.
 
 Go ahead and grow as much as you like!
 
@@ -46,7 +46,7 @@ Go ahead and grow as much as you like!
 
 
 = Send With Any Email Provider. =
-Newsletter works with any email provider, no matter if you want to use a professional provider or your own server.
+Mailster works with any email provider, no matter if you want to use a professional provider or your own server.
 
 
 = RSS to Email. =
@@ -56,14 +56,14 @@ With our RSS-to-email feature, new posts are automatically imported into an emai
 
 
 = Time Zone Based Sending. =
-You have subscribers all over the world? With Newsletter you send your email campaigns based on the time zone of your subscribers.
+You have subscribers all over the world? With Mailster you send your email campaigns based on the time zone of your subscribers.
 
 This way you ensure that your readers receive your emails at the exact times when they are most likely to open them.
 
 
 = Know Your Subscribers. =
 Analyze your subscribers´ data and target your marketing strategy according to their needs.
-Newsletter collects and uses your subscribers’ data while staying completely within GDPR requirements.
+Mailster collects and uses your subscribers’ data while staying completely within GDPR requirements.
 
 
 = Merge Tags. =
@@ -73,7 +73,7 @@ Our merge tags are customizable, extendable and easy to remember.
 
 
 = Create Better Segmentations. =
-Increase your open rates with targeted campaigns and segmentation. Newsletter provides many metrics to choose from so only the right audience gets the right email.
+Increase your open rates with targeted campaigns and segmentation. Mailster provides many metrics to choose from so only the right audience gets the right email.
 
 
 = Great Campaign Insights. =
@@ -83,8 +83,8 @@ Find out about your subscribers’ click rates and open rates, their location, a
 
 
 = Test Your Email Quality Before Sending. =
-With Newsletter you can give your email campaign a thorough pre-check before sending it out.
-Newsletter gives you feedback on what you should improve.
+With Mailster you can give your email campaign a thorough pre-check before sending it out.
+Mailster gives you feedback on what you should improve.
 
 Fix these issues, send and relax – your campaign will be good.
 
@@ -92,7 +92,7 @@ Fix these issues, send and relax – your campaign will be good.
 = Automation. =
 Send automatic welcome emails, birthday emails, drip campaigns, follow-ups, auto-responders and more.
 
-Just sit back and let Newsletter take care of your email marketing.
+Just sit back and let Mailster take care of your email marketing.
 
 
 = You Own Your Data. =
@@ -101,7 +101,7 @@ No third party has access to that data.
 
 
 = Dozens of Integrations With Plugins. =
-We’ve partnered with many popular developers so you can continue using your favorite plugins along with Newsletter.
+We’ve partnered with many popular developers so you can continue using your favorite plugins along with Mailster.
 
 
 = Built in Capability Management. =
@@ -111,13 +111,13 @@ Let your team support you!
 
 
 = Custom Template Language =
-With Newsletter’s simple and straightforward template markup language, coding your own template or adopting existing ones is easy.
+With Mailster’s simple and straightforward template markup language, coding your own template or adopting existing ones is easy.
 
 
 = Developer Friendly =
-Newsletter provides plenty hooks and filters you can use to increase its functionality and options.
+Mailster provides plenty hooks and filters you can use to increase its functionality and options.
 
-Just go ahead and adapt Newsletter to your unique needs.
+Just go ahead and adapt Mailster to your unique needs.
 
 = Feature =
 
@@ -150,17 +150,17 @@ Just go ahead and adapt Newsletter to your unique needs.
 
 == Free and Premium Templates ==
 
-Newsletter supports over 400 templates from various authors. Please visit our website to browse them all.
+Mailster supports over 400 templates from various authors. Please visit our website to browse them all.
 
-**[Templates →](https://Newsletter.co/templates)**
-
-== Add Ons ==
+**[Templates →](https://mailster.co/templates)**
 
 == Add Ons ==
 
-Extend the functionality of Newsletter or your site with these add ons.
+== Add Ons ==
 
-**[Add ons →](https://Newsletter.co/addons)**
+Extend the functionality of Mailster or your site with these add ons.
+
+**[Add ons →](https://mailster.co/addons)**
 
 
 == Support ==
@@ -170,12 +170,12 @@ Extend the functionality of Newsletter or your site with these add ons.
 = Knowledge Base =
 Find help on our knowledge base. With over 300 articles, tips and troubleshoot guides you can quickly find answers to the most common problems.
 
-**[Visit Knowledge Base →](https://kb.Newsletter.co/)**
+**[Visit Knowledge Base →](https://kb.mailster.co/)**
 
 = Members Area =
 We provide all of our official support via the member area. Please login or register if you have not done so yet for access so that you can post your question there.
 
-**[Login →](https://Newsletter.co/login/)** | **[Register →](https://Newsletter.co/register/)**
+**[Login →](https://mailster.co/login/)** | **[Register →](https://mailster.co/register/)**
 
 = Hire an expert =
 Get professional development help from our expert support partner *Codeable* for consultations, customisations and small to medium sized projects.
@@ -186,6 +186,17 @@ Get professional development help from our expert support partner *Codeable* for
 == Changelog ==
 
 == Changelog ==
+
+= 3.0.1 =
+
+* added: editing templates on the templates page is back
+* fixed: mergetags now work correctly in image URL field if fallback is present
+* fixed: draft campaigns can now get duplicated
+* fixed: install plugins on addon page is working
+* fixed: problem if PHPMailer is loaded in another plugin
+* fixed: installed templates were not access able when no required Mailster version was set
+* improved upgrade process from 2.4.x
+* smaller bug fixes
 
 = 3.0 =
 
@@ -212,4 +223,4 @@ Get professional development help from our expert support partner *Codeable* for
 
 **For further details please visit our change log page.**
 
-**[Newsletter Homepage →](https://Newsletter.co/changelog/)**
+**[Mailster Homepage →](https://mailster.co/changelog/)**
