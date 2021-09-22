@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 === Mailster - Email Newsletter Plugin for WordPress ===
 Contributors: EverPress
+=======
+=== KCMS Newsletter===
+Contributors: KubeeCMS
+>>>>>>> 6fb1712dfecf4201dd3b9d975f1a555a81fb2d8c
 Tags: email newsletter, newsletter, newsletter signup, email signup, email marketing
 Requires at least: 4.6
 Tested up to: 5.8
