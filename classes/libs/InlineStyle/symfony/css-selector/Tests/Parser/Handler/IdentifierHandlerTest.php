@@ -16,34 +16,31 @@ use Symfony\Component\CssSelector\Parser\Token;
 use Symfony\Component\CssSelector\Parser\Tokenizer\TokenizerPatterns;
 use Symfony\Component\CssSelector\Parser\Tokenizer\TokenizerEscaping;
 
-class IdentifierHandlerTest extends AbstractHandlerTest
-{
-    public function getHandleValueTestData()
-    {
-        return array(
-            array('foo', new Token(Token::TYPE_IDENTIFIER, 'foo', 0), ''),
-            array('foo|bar', new Token(Token::TYPE_IDENTIFIER, 'foo', 0), '|bar'),
-            array('foo.class', new Token(Token::TYPE_IDENTIFIER, 'foo', 0), '.class'),
-            array('foo[attr]', new Token(Token::TYPE_IDENTIFIER, 'foo', 0), '[attr]'),
-            array('foo bar', new Token(Token::TYPE_IDENTIFIER, 'foo', 0), ' bar'),
-        );
-    }
+class IdentifierHandlerTest extends AbstractHandlerTest {
 
-    public function getDontHandleValueTestData()
-    {
-        return array(
-            array('>'),
-            array('+'),
-            array(' '),
-            array('*|foo'),
-            array('/* comment */'),
-        );
-    }
+	public function getHandleValueTestData() {
+		return array(
+			array( 'foo', new Token( Token::TYPE_IDENTIFIER, 'foo', 0 ), '' ),
+			array( 'foo|bar', new Token( Token::TYPE_IDENTIFIER, 'foo', 0 ), '|bar' ),
+			array( 'foo.class', new Token( Token::TYPE_IDENTIFIER, 'foo', 0 ), '.class' ),
+			array( 'foo[attr]', new Token( Token::TYPE_IDENTIFIER, 'foo', 0 ), '[attr]' ),
+			array( 'foo bar', new Token( Token::TYPE_IDENTIFIER, 'foo', 0 ), ' bar' ),
+		);
+	}
 
-    protected function generateHandler()
-    {
-        $patterns = new TokenizerPatterns();
+	public function getDontHandleValueTestData() {
+		return array(
+			array( '>' ),
+			array( '+' ),
+			array( ' ' ),
+			array( '*|foo' ),
+			array( '/* comment */' ),
+		);
+	}
 
-        return new IdentifierHandler($patterns, new TokenizerEscaping($patterns));
-    }
+	protected function generateHandler() {
+		$patterns = new TokenizerPatterns();
+
+		return new IdentifierHandler( $patterns, new TokenizerEscaping( $patterns ) );
+	}
 }

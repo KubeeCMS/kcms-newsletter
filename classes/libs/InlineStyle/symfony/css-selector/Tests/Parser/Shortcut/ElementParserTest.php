@@ -17,27 +17,25 @@ use Symfony\Component\CssSelector\Parser\Shortcut\ElementParser;
 /**
  * @author Jean-François Simon <jeanfrancois.simon@sensiolabs.com>
  */
-class ElementParserTest extends \PHPUnit_Framework_TestCase
-{
-    /** @dataProvider getParseTestData */
-    public function testParse($source, $representation)
-    {
-        $parser = new ElementParser();
-        $selectors = $parser->parse($source);
-        $this->assertCount(1, $selectors);
+class ElementParserTest extends \PHPUnit_Framework_TestCase {
 
-        /** @var SelectorNode $selector */
-        $selector = $selectors[0];
-        $this->assertEquals($representation, (string) $selector->getTree());
-    }
+	/** @dataProvider getParseTestData */
+	public function testParse( $source, $representation ) {
+		$parser    = new ElementParser();
+		$selectors = $parser->parse( $source );
+		$this->assertCount( 1, $selectors );
 
-    public function getParseTestData()
-    {
-        return array(
-            array('*', 'Element[*]'),
-            array('testel', 'Element[testel]'),
-            array('testns|*', 'Element[testns|*]'),
-            array('testns|testel', 'Element[testns|testel]'),
-        );
-    }
+		/** @var SelectorNode $selector */
+		$selector = $selectors[0];
+		$this->assertEquals( $representation, (string) $selector->getTree() );
+	}
+
+	public function getParseTestData() {
+		return array(
+			array( '*', 'Element[*]' ),
+			array( 'testel', 'Element[testel]' ),
+			array( 'testns|*', 'Element[testns|*]' ),
+			array( 'testns|testel', 'Element[testns|testel]' ),
+		);
+	}
 }

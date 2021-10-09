@@ -16,40 +16,36 @@ use Symfony\Component\CssSelector\Parser\Reader;
 use Symfony\Component\CssSelector\Parser\Token;
 use Symfony\Component\CssSelector\Parser\TokenStream;
 
-class CommentHandlerTest extends AbstractHandlerTest
-{
-    /** @dataProvider getHandleValueTestData */
-    public function testHandleValue($value, Token $unusedArgument, $remainingContent)
-    {
-        $reader = new Reader($value);
-        $stream = new TokenStream();
+class CommentHandlerTest extends AbstractHandlerTest {
 
-        $this->assertTrue($this->generateHandler()->handle($reader, $stream));
-        // comments are ignored (not pushed as token in stream)
-        $this->assertStreamEmpty($stream);
-        $this->assertRemainingContent($reader, $remainingContent);
-    }
+	/** @dataProvider getHandleValueTestData */
+	public function testHandleValue( $value, Token $unusedArgument, $remainingContent ) {
+		$reader = new Reader( $value );
+		$stream = new TokenStream();
 
-    public function getHandleValueTestData()
-    {
-        return array(
-            // 2nd argument only exists for inherited method compatibility
-            array('/* comment */', new Token(null, null, null), ''),
-            array('/* comment */foo', new Token(null, null, null), 'foo'),
-        );
-    }
+		$this->assertTrue( $this->generateHandler()->handle( $reader, $stream ) );
+		// comments are ignored (not pushed as token in stream)
+		$this->assertStreamEmpty( $stream );
+		$this->assertRemainingContent( $reader, $remainingContent );
+	}
 
-    public function getDontHandleValueTestData()
-    {
-        return array(
-            array('>'),
-            array('+'),
-            array(' '),
-        );
-    }
+	public function getHandleValueTestData() {
+		return array(
+			// 2nd argument only exists for inherited method compatibility
+			array( '/* comment */', new Token( null, null, null ), '' ),
+			array( '/* comment */foo', new Token( null, null, null ), 'foo' ),
+		);
+	}
 
-    protected function generateHandler()
-    {
-        return new CommentHandler();
-    }
+	public function getDontHandleValueTestData() {
+		return array(
+			array( '>' ),
+			array( '+' ),
+			array( ' ' ),
+		);
+	}
+
+	protected function generateHandler() {
+		return new CommentHandler();
+	}
 }

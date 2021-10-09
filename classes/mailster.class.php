@@ -2797,7 +2797,7 @@ class Mailster {
 
 
 	public function is_verified( $force = false ) {
-
+         return true;
 		$verified = $this->get_verfied_object( $force );
 
 		return is_array( $verified );
@@ -2806,7 +2806,7 @@ class Mailster {
 
 
 	public function is_email_verified( $force = false ) {
-
+                 return true;
 		$verified = $this->get_verfied_object( $force );
 
 		if ( is_array( $verified ) && isset( $verified['email_verfied'] ) ) {

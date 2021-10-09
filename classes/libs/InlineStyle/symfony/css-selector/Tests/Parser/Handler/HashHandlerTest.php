@@ -16,34 +16,31 @@ use Symfony\Component\CssSelector\Parser\Token;
 use Symfony\Component\CssSelector\Parser\Tokenizer\TokenizerPatterns;
 use Symfony\Component\CssSelector\Parser\Tokenizer\TokenizerEscaping;
 
-class HashHandlerTest extends AbstractHandlerTest
-{
-    public function getHandleValueTestData()
-    {
-        return array(
-            array('#id', new Token(Token::TYPE_HASH, 'id', 0), ''),
-            array('#123', new Token(Token::TYPE_HASH, '123', 0), ''),
+class HashHandlerTest extends AbstractHandlerTest {
 
-            array('#id.class', new Token(Token::TYPE_HASH, 'id', 0), '.class'),
-            array('#id element', new Token(Token::TYPE_HASH, 'id', 0), ' element'),
-        );
-    }
+	public function getHandleValueTestData() {
+		return array(
+			array( '#id', new Token( Token::TYPE_HASH, 'id', 0 ), '' ),
+			array( '#123', new Token( Token::TYPE_HASH, '123', 0 ), '' ),
 
-    public function getDontHandleValueTestData()
-    {
-        return array(
-            array('id'),
-            array('123'),
-            array('<'),
-            array('<'),
-            array('#'),
-        );
-    }
+			array( '#id.class', new Token( Token::TYPE_HASH, 'id', 0 ), '.class' ),
+			array( '#id element', new Token( Token::TYPE_HASH, 'id', 0 ), ' element' ),
+		);
+	}
 
-    protected function generateHandler()
-    {
-        $patterns = new TokenizerPatterns();
+	public function getDontHandleValueTestData() {
+		return array(
+			array( 'id' ),
+			array( '123' ),
+			array( '<' ),
+			array( '<' ),
+			array( '#' ),
+		);
+	}
 
-        return new HashHandler($patterns, new TokenizerEscaping($patterns));
-    }
+	protected function generateHandler() {
+		$patterns = new TokenizerPatterns();
+
+		return new HashHandler( $patterns, new TokenizerEscaping( $patterns ) );
+	}
 }

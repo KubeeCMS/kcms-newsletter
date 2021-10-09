@@ -18,50 +18,46 @@ use Symfony\Component\CssSelector\Parser\TokenStream;
 /**
  * @author Jean-François Simon <contact@jfsimon.fr>
  */
-abstract class AbstractHandlerTest extends \PHPUnit_Framework_TestCase
-{
-    /** @dataProvider getHandleValueTestData */
-    public function testHandleValue($value, Token $expectedToken, $remainingContent)
-    {
-        $reader = new Reader($value);
-        $stream = new TokenStream();
+abstract class AbstractHandlerTest extends \PHPUnit_Framework_TestCase {
 
-        $this->assertTrue($this->generateHandler()->handle($reader, $stream));
-        $this->assertEquals($expectedToken, $stream->getNext());
-        $this->assertRemainingContent($reader, $remainingContent);
-    }
+	/** @dataProvider getHandleValueTestData */
+	public function testHandleValue( $value, Token $expectedToken, $remainingContent ) {
+		$reader = new Reader( $value );
+		$stream = new TokenStream();
 
-    /** @dataProvider getDontHandleValueTestData */
-    public function testDontHandleValue($value)
-    {
-        $reader = new Reader($value);
-        $stream = new TokenStream();
+		$this->assertTrue( $this->generateHandler()->handle( $reader, $stream ) );
+		$this->assertEquals( $expectedToken, $stream->getNext() );
+		$this->assertRemainingContent( $reader, $remainingContent );
+	}
 
-        $this->assertFalse($this->generateHandler()->handle($reader, $stream));
-        $this->assertStreamEmpty($stream);
-        $this->assertRemainingContent($reader, $value);
-    }
+	/** @dataProvider getDontHandleValueTestData */
+	public function testDontHandleValue( $value ) {
+		$reader = new Reader( $value );
+		$stream = new TokenStream();
 
-    abstract public function getHandleValueTestData();
-    abstract public function getDontHandleValueTestData();
-    abstract protected function generateHandler();
+		$this->assertFalse( $this->generateHandler()->handle( $reader, $stream ) );
+		$this->assertStreamEmpty( $stream );
+		$this->assertRemainingContent( $reader, $value );
+	}
 
-    protected function assertStreamEmpty(TokenStream $stream)
-    {
-        $property = new \ReflectionProperty($stream, 'tokens');
-        $property->setAccessible(true);
+	abstract public function getHandleValueTestData();
+	abstract public function getDontHandleValueTestData();
+	abstract protected function generateHandler();
 
-        $this->assertEquals(array(), $property->getValue($stream));
-    }
+	protected function assertStreamEmpty( TokenStream $stream ) {
+		$property = new \ReflectionProperty( $stream, 'tokens' );
+		$property->setAccessible( true );
 
-    protected function assertRemainingContent(Reader $reader, $remainingContent)
-    {
-        if ('' === $remainingContent) {
-            $this->assertEquals(0, $reader->getRemainingLength());
-            $this->assertTrue($reader->isEOF());
-        } else {
-            $this->assertEquals(strlen($remainingContent), $reader->getRemainingLength());
-            $this->assertEquals(0, $reader->getOffset($remainingContent));
-        }
-    }
+		$this->assertEquals( array(), $property->getValue( $stream ) );
+	}
+
+	protected function assertRemainingContent( Reader $reader, $remainingContent ) {
+		if ( '' === $remainingContent ) {
+			$this->assertEquals( 0, $reader->getRemainingLength() );
+			$this->assertTrue( $reader->isEOF() );
+		} else {
+			$this->assertEquals( strlen( $remainingContent ), $reader->getRemainingLength() );
+			$this->assertEquals( 0, $reader->getOffset( $remainingContent ) );
+		}
+	}
 }

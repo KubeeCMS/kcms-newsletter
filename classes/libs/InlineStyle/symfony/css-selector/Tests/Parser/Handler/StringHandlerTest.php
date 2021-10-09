@@ -16,35 +16,32 @@ use Symfony\Component\CssSelector\Parser\Token;
 use Symfony\Component\CssSelector\Parser\Tokenizer\TokenizerPatterns;
 use Symfony\Component\CssSelector\Parser\Tokenizer\TokenizerEscaping;
 
-class StringHandlerTest extends AbstractHandlerTest
-{
-    public function getHandleValueTestData()
-    {
-        return array(
-            array('"hello"', new Token(Token::TYPE_STRING, 'hello', 1), ''),
-            array('"1"', new Token(Token::TYPE_STRING, '1', 1), ''),
-            array('" "', new Token(Token::TYPE_STRING, ' ', 1), ''),
-            array('""', new Token(Token::TYPE_STRING, '', 1), ''),
-            array("'hello'", new Token(Token::TYPE_STRING, 'hello', 1), ''),
+class StringHandlerTest extends AbstractHandlerTest {
 
-            array("'foo'bar", new Token(Token::TYPE_STRING, 'foo', 1), 'bar'),
-        );
-    }
+	public function getHandleValueTestData() {
+		return array(
+			array( '"hello"', new Token( Token::TYPE_STRING, 'hello', 1 ), '' ),
+			array( '"1"', new Token( Token::TYPE_STRING, '1', 1 ), '' ),
+			array( '" "', new Token( Token::TYPE_STRING, ' ', 1 ), '' ),
+			array( '""', new Token( Token::TYPE_STRING, '', 1 ), '' ),
+			array( "'hello'", new Token( Token::TYPE_STRING, 'hello', 1 ), '' ),
 
-    public function getDontHandleValueTestData()
-    {
-        return array(
-            array('hello'),
-            array('>'),
-            array('1'),
-            array(' '),
-        );
-    }
+			array( "'foo'bar", new Token( Token::TYPE_STRING, 'foo', 1 ), 'bar' ),
+		);
+	}
 
-    protected function generateHandler()
-    {
-        $patterns = new TokenizerPatterns();
+	public function getDontHandleValueTestData() {
+		return array(
+			array( 'hello' ),
+			array( '>' ),
+			array( '1' ),
+			array( ' ' ),
+		);
+	}
 
-        return new StringHandler($patterns, new TokenizerEscaping($patterns));
-    }
+	protected function generateHandler() {
+		$patterns = new TokenizerPatterns();
+
+		return new StringHandler( $patterns, new TokenizerEscaping( $patterns ) );
+	}
 }

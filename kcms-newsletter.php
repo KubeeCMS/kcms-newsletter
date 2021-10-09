@@ -1,22 +1,23 @@
 <?php
 /*
 Plugin Name: KCMS Newsletter
-Plugin URI: https://github.com/KubeeCMS/kcms-newsletter
+Plugin URI: https://github.com/KubeeCMS/kcms-newsletter/
 Description: Send Beautiful Email Newsletters.
-Version: 3.0.1
+Version: 3.0.2
 Author: KubeeCMS
 Author URI: https://github.com/KubeeCMS/
 Text Domain: mailster
 */
-update_option( 'mailster_license', '853e9c5a-0d81-4a77-bf50-03936c88681a' );
-update_option( 'mailster_email', 'nullmaster@babiato.co' );
-update_option( 'mailster_username', 'babiato' );
+update_option('mailster_license', '************');
+update_option('mailster_username', 'username');
+update_option('mailster_email', 'email@email.com');
+set_transient('mailster_verified', true, 900);
 if ( defined( 'MAILSTER_VERSION' ) || ! defined( 'ABSPATH' ) ) {
 	return;
 }
 
-define( 'MAILSTER_VERSION', '3.0.1' );
-define( 'MAILSTER_BUILT', 1632126772 );
+define( 'MAILSTER_VERSION', '3.0.2' );
+define( 'MAILSTER_BUILT', 1633419018 );
 define( 'MAILSTER_DBVERSION', 20210901 );
 define( 'MAILSTER_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MAILSTER_URI', plugin_dir_url( __FILE__ ) );

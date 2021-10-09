@@ -5,13 +5,13 @@
   "description":
     "Invoice order numbers ...",
   "homepage": "https://github.com/KubeeCMS/kcms-newsletter/",
-  "keywords": ["kubeecms", "kubee", "kcms-invoice-order-numbers", "order-numbers"],
+  "keywords": ["kubeecms", "kubee", "kcms-newsletter"],
   "support": {
     "issues": "https://github.com/KubeeCMS/kcms-newsletter/issues/",
     "forum": "https://discourse.kubee.com/"
   },
   "require": {
-    "php": ">=8.0"
+    "php": ">=7.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6"
