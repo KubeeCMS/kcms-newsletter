@@ -3,7 +3,7 @@
   "type": "wordpress-plugin",
   "license": "GNU",
   "description":
-    "Invoice order numbers ...",
+    "Send Beautiful Email Newsletters...",
   "homepage": "https://github.com/KubeeCMS/kcms-newsletter/",
   "keywords": ["kubeecms", "kubee", "kcms-newsletter"],
   "support": {
