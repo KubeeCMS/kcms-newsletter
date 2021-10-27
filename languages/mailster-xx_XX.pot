@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mailster\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 09:29+0200\n"
+"POT-Creation-Date: 2021-10-19 13:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,7 +168,7 @@ msgid_plural "%d Updates available"
 msgstr[0] ""
 msgstr[1] ""
 
-#: classes/forms.table.class.php:169
+#: classes/forms.table.class.php:178
 #, possible-php-format
 msgid "%d Widget"
 msgid_plural "%d Widgets"
@@ -226,7 +226,7 @@ msgstr ""
 msgid "%d times"
 msgstr ""
 
-#: classes/settings.class.php:1318
+#: classes/settings.class.php:1326
 #, possible-php-format
 msgid "%s Add-on"
 msgstr ""
@@ -367,7 +367,7 @@ msgstr ""
 msgid "%s has joined"
 msgstr ""
 
-#: classes/settings.class.php:402
+#: classes/settings.class.php:404
 #, possible-php-format
 msgid "%s is a reserved tag!"
 msgstr ""
@@ -387,7 +387,7 @@ msgstr ""
 msgid "%s is not a valid URL!"
 msgstr ""
 
-#: classes/settings.class.php:785
+#: classes/settings.class.php:787
 #, possible-php-format
 msgid "%s is not a valid email address"
 msgstr ""
@@ -430,7 +430,7 @@ msgid_plural "%s soft bounces"
 msgstr[0] ""
 msgstr[1] ""
 
-#: classes/lists.table.class.php:120
+#: classes/lists.table.class.php:128
 #, possible-php-format
 msgid "%s subscribed"
 msgstr ""
@@ -551,7 +551,7 @@ msgstr ""
 msgid "A new Version is available"
 msgstr ""
 
-#: classes/settings.class.php:258
+#: classes/settings.class.php:260
 msgid "A new confirmation message has been sent"
 msgstr ""
 
@@ -610,7 +610,7 @@ msgstr ""
 msgid "Activating Add on"
 msgstr ""
 
-#: classes/addons.class.php:267
+#: classes/addons.class.php:264
 msgid "Activating..."
 msgstr ""
 
@@ -742,19 +742,19 @@ msgstr ""
 msgid "Add your custom tags here. They work like permanent tags"
 msgstr ""
 
-#: classes/addons.class.php:272
+#: classes/addons.class.php:269
 msgid "Add-on activated!"
 msgstr ""
 
-#: classes/addons.class.php:273
+#: classes/addons.class.php:270
 msgid "Add-on deactivated!"
 msgstr ""
 
-#: classes/addons.class.php:274
+#: classes/addons.class.php:271
 msgid "Add-on has been updated!"
 msgstr ""
 
-#: classes/addons.class.php:271
+#: classes/addons.class.php:268
 msgid "Add-on installed!"
 msgstr ""
 
@@ -762,11 +762,11 @@ msgstr ""
 msgid "Add-on list"
 msgstr ""
 
-#: classes/addons.class.php:270
+#: classes/addons.class.php:267
 msgid "Add-on loaded!"
 msgstr ""
 
-#: classes/addons.class.php:328
+#: classes/addons.class.php:321
 msgid "Add-on successful loaded!"
 msgstr ""
 
@@ -809,7 +809,11 @@ msgstr ""
 msgid "All Set!"
 msgstr ""
 
-#: classes/settings.class.php:156
+#: views/settings/security.php:70
+msgid "All above tests must still be passed."
+msgstr ""
+
+#: classes/settings.class.php:158
 msgid "All rights reserved."
 msgstr ""
 
@@ -834,6 +838,10 @@ msgstr ""
 
 #: views/settings/frontend.php:60
 msgid "Allow users to view the next/last newsletters"
+msgstr ""
+
+#: views/settings/security.php:67
+msgid "Allowed Countries"
 msgstr ""
 
 #: views/settings/texts.php:50
@@ -864,7 +872,7 @@ msgstr ""
 msgid "An error occurred while updating Mailster!"
 msgstr ""
 
-#: classes/settings.class.php:244 includes/updates.php:53
+#: classes/settings.class.php:246 includes/updates.php:53
 msgid "An error occurred! Please try again later!"
 msgstr ""
 
@@ -1022,7 +1030,7 @@ msgid_plural "Autoresponders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: classes/queue.class.php:1300
+#: classes/queue.class.php:1301
 #, possible-php-format
 msgid "Autoresponder %1$s has caused sending error: %2$s"
 msgstr ""
@@ -1082,6 +1090,10 @@ msgstr ""
 msgid "Bit Size"
 msgstr ""
 
+#: views/settings/security.php:59
+msgid "Blocked Countries"
+msgstr ""
+
 #: views/settings/security.php:44
 msgid "Blocked Domains"
 msgstr ""
@@ -1138,7 +1150,7 @@ msgstr ""
 msgid "Button Style"
 msgstr ""
 
-#: classes/templates.class.php:774 classes/addons.class.php:304
+#: classes/templates.class.php:774 classes/addons.class.php:297
 #, possible-php-format
 msgid "Buy %1$s from %2$s now!"
 msgstr ""
@@ -1198,12 +1210,12 @@ msgid_plural "Campaigns"
 msgstr[0] ""
 msgstr[1] ""
 
-#: classes/queue.class.php:1306
+#: classes/queue.class.php:1307
 #, possible-php-format
 msgid "Campaign %1$s has been paused cause of a sending error: %2$s"
 msgstr ""
 
-#: classes/queue.class.php:1309
+#: classes/queue.class.php:1310
 #, possible-php-format
 msgid "Campaign %1$s has some delay cause of a sending error: %2$s"
 msgstr ""
@@ -1302,7 +1314,7 @@ msgstr ""
 msgid "Change the user in the preview."
 msgstr ""
 
-#: includes/functions.php:1166
+#: includes/functions.php:1177
 msgid "Changelog"
 msgstr ""
 
@@ -1382,7 +1394,7 @@ msgstr ""
 msgid "Check your console for more info."
 msgstr ""
 
-#: classes/settings.class.php:390 views/settings/subscribers.php:79
+#: classes/settings.class.php:392 views/settings/subscribers.php:79
 msgid "Checkbox"
 msgstr ""
 
@@ -1394,7 +1406,7 @@ msgstr ""
 msgid "Checks via your Akismet installation."
 msgstr ""
 
-#: classes/lists.table.class.php:105
+#: classes/lists.table.class.php:113
 #, possible-php-format
 msgid "Child of %s"
 msgstr ""
@@ -1506,11 +1518,19 @@ msgstr ""
 msgid "Colors Schemas"
 msgstr ""
 
+#: views/settings/security.php:69
+msgid "Comma separated list of country codes to allow."
+msgstr ""
+
+#: views/settings/security.php:61
+msgid "Comma separated list of country codes to block."
+msgstr ""
+
 #: classes/manage.class.php:1493
 msgid "Comma-separated values (CSV)"
 msgstr ""
 
-#: classes/helper.class.php:2013
+#: classes/helper.class.php:2016
 msgid "Command not supported"
 msgstr ""
 
@@ -1833,21 +1853,21 @@ msgstr ""
 msgid "Custom Fields"
 msgstr ""
 
-#: includes/functions.php:1094 includes/functions.php:1118
+#: includes/functions.php:1105 includes/functions.php:1129
 #, possible-php-format
 msgid ""
 "Custom Mailster styles should be added by using the %s action. Please check "
 "the documentation."
 msgstr ""
 
-#: includes/functions.php:1019
+#: includes/functions.php:1030
 #, possible-php-format
 msgid ""
 "Custom Mailster tags should be added by using the %s action. Please check "
 "the documentation."
 msgstr ""
 
-#: includes/functions.php:1064
+#: includes/functions.php:1075
 #, possible-php-format
 msgid ""
 "Custom Mailster tags should be removed by using the %s action. Please check "
@@ -1895,7 +1915,7 @@ msgstr ""
 msgid "Database update required!"
 msgstr ""
 
-#: classes/tinymce.class.php:134 classes/settings.class.php:391
+#: classes/tinymce.class.php:134 classes/settings.class.php:393
 #: classes/campaigns.class.php:626 views/settings/subscribers.php:80
 #: views/lists/detail.php:138 views/subscribers/detail.php:445
 #: views/newsletter/details.php:77
@@ -1917,7 +1937,7 @@ msgctxt "mailster"
 msgid "Deactivate %s"
 msgstr ""
 
-#: classes/addons.class.php:268
+#: classes/addons.class.php:265
 msgid "Deactivating..."
 msgstr ""
 
@@ -1989,8 +2009,8 @@ msgstr ""
 msgid "Define which column represents which field"
 msgstr ""
 
-#: classes/forms.table.class.php:212 classes/subscribers.table.class.php:279
-#: classes/lists.table.class.php:159 views/templates.php:80 views/manage.php:29
+#: classes/forms.table.class.php:221 classes/subscribers.table.class.php:279
+#: classes/lists.table.class.php:167 views/templates.php:80 views/manage.php:29
 msgid "Delete"
 msgstr ""
 
@@ -2084,7 +2104,7 @@ msgstr ""
 msgid "Delete this color schema?"
 msgstr ""
 
-#: classes/lists.table.class.php:160
+#: classes/lists.table.class.php:168
 msgid "Delete with subscribers"
 msgstr ""
 
@@ -2124,7 +2144,7 @@ msgid "Description"
 msgstr ""
 
 #: classes/tinymce.class.php:195 classes/widget.class.php:538
-#: classes/forms.table.class.php:120 views/forms/detail.php:88
+#: classes/forms.table.class.php:129 views/forms/detail.php:88
 #: views/forms/detail.php:100 views/forms/detail.php:166
 msgid "Design"
 msgstr ""
@@ -2206,7 +2226,7 @@ msgstr ""
 msgid "Do you like to select all %s subscribers?"
 msgstr ""
 
-#: classes/settings.class.php:1317
+#: classes/settings.class.php:1325
 #, possible-php-format
 msgid "Do you like to send your campaigns with %1$s? Please use our %2$s."
 msgstr ""
@@ -2233,11 +2253,6 @@ msgstr ""
 
 #: classes/campaigns.class.php:1443
 msgid "Do you really like to remove all modules?"
-msgstr ""
-
-#: classes/addons.class.php:262
-#, possible-php-format
-msgid "Do you really like to remove file %1$s from addon %2$s?"
 msgstr ""
 
 #: classes/templates.class.php:737
@@ -2274,7 +2289,7 @@ msgstr ""
 msgid "Do you really like to reset all capabilities? This cannot be undone!"
 msgstr ""
 
-#: classes/settings.class.php:405
+#: classes/settings.class.php:407
 msgid "Do you really like to reset the options? This cannot be undone!"
 msgstr ""
 
@@ -2331,7 +2346,7 @@ msgid "Downloading the latest version of Mailster"
 msgstr ""
 
 #: classes/templates.class.php:740 classes/dashboard.class.php:242
-#: classes/addons.class.php:265
+#: classes/addons.class.php:262
 msgid "Downloading..."
 msgstr ""
 
@@ -2343,11 +2358,11 @@ msgstr ""
 msgid "Drop your list here"
 msgstr ""
 
-#: classes/settings.class.php:388 views/settings/subscribers.php:77
+#: classes/settings.class.php:390 views/settings/subscribers.php:77
 msgid "Dropdown Menu"
 msgstr ""
 
-#: classes/forms.table.class.php:122 classes/campaigns.class.php:1117
+#: classes/forms.table.class.php:131 classes/campaigns.class.php:1117
 #: classes/campaigns.class.php:1257 views/newsletter/submit.php:55
 msgid "Duplicate"
 msgstr ""
@@ -2443,7 +2458,7 @@ msgid "Editing template file %1$s for %2$s"
 msgstr ""
 
 #: classes/forms.class.php:1502 classes/forms.class.php:1519
-#: classes/settings.class.php:246 classes/conditions.class.php:102
+#: classes/settings.class.php:248 classes/conditions.class.php:102
 #: classes/form.class.php:846 includes/updates.php:37
 #: views/settings/wordpress-users.php:25 views/settings/texts.php:25
 #: views/newsletter/precheck.php:93
@@ -2521,7 +2536,7 @@ msgstr ""
 msgid "Enable usage tracking for this site."
 msgstr ""
 
-#: classes/settings.class.php:1660
+#: classes/settings.class.php:1668
 msgid "Enabling this option may solve connection problems to SMTP servers"
 msgstr ""
 
@@ -2644,7 +2659,7 @@ msgctxt "templates"
 msgid "Featured"
 msgstr ""
 
-#: classes/helper.class.php:1674
+#: classes/helper.class.php:1677
 #, possible-php-format
 msgid "Feed item #%d does not exist"
 msgstr ""
@@ -2653,7 +2668,7 @@ msgstr ""
 msgid "Field Labels"
 msgstr ""
 
-#: classes/settings.class.php:383 views/settings/subscribers.php:87
+#: classes/settings.class.php:385 views/settings/subscribers.php:87
 msgid "Field Name"
 msgstr ""
 
@@ -2661,7 +2676,7 @@ msgstr ""
 msgid "Field wrapper"
 msgstr ""
 
-#: classes/forms.class.php:283 classes/forms.table.class.php:119
+#: classes/forms.class.php:283 classes/forms.table.class.php:128
 #: views/forms/detail.php:86 views/forms/detail.php:201
 #: views/conditions/conditions.php:51
 msgid "Fields"
@@ -2725,7 +2740,7 @@ msgid "Finishing Registration"
 msgstr ""
 
 #: classes/tinymce.class.php:82 classes/forms.class.php:1520
-#: classes/settings.class.php:247 includes/updates.php:33
+#: classes/settings.class.php:249 includes/updates.php:33
 #: views/settings/texts.php:26
 msgid "First Name"
 msgstr ""
@@ -2748,7 +2763,7 @@ msgstr ""
 msgid "Flat"
 msgstr ""
 
-#: classes/settings.class.php:241
+#: classes/settings.class.php:243
 msgid "Following fields are missing or incorrect"
 msgstr ""
 
@@ -2854,7 +2869,7 @@ msgstr ""
 msgid "From Name"
 msgstr ""
 
-#: classes/settings.class.php:832 views/settings.php:36
+#: classes/settings.class.php:834 views/settings.php:36
 msgid "Front End"
 msgstr ""
 
@@ -3054,7 +3069,7 @@ msgstr ""
 msgid "I agree to the %1$s and the %2$s by completing the registration."
 msgstr ""
 
-#: classes/settings.class.php:260
+#: classes/settings.class.php:262
 msgid "I agree to the privacy policy and terms."
 msgstr ""
 
@@ -3168,7 +3183,7 @@ msgid ""
 "that your provider offers."
 msgstr ""
 
-#: classes/settings.class.php:155
+#: classes/settings.class.php:157
 msgid ""
 "If you received this email by mistake, simply delete it. You won't be "
 "subscribed if you don't click the confirmation link"
@@ -3368,7 +3383,7 @@ msgstr ""
 msgid "Installing Add on"
 msgstr ""
 
-#: classes/addons.class.php:266
+#: classes/addons.class.php:263
 msgid "Installing..."
 msgstr ""
 
@@ -3456,7 +3471,7 @@ msgid "Language as been loaded successfully."
 msgstr ""
 
 #: classes/tinymce.class.php:83 classes/forms.class.php:1521
-#: classes/settings.class.php:248 includes/updates.php:34
+#: classes/settings.class.php:250 includes/updates.php:34
 #: views/settings/texts.php:27
 msgid "Last Name"
 msgstr ""
@@ -3497,11 +3512,15 @@ msgstr ""
 msgid "Learn more about segmentation"
 msgstr ""
 
+#: views/settings/security.php:61 views/settings/security.php:69
+msgid "Leave empty to allow signups from all countries."
+msgstr ""
+
 #: views/settings/advanced.php:44
 msgid "Legacy Hooks"
 msgstr ""
 
-#: classes/settings.class.php:503
+#: classes/settings.class.php:505
 msgid "Limits have been reset"
 msgstr ""
 
@@ -3570,7 +3589,7 @@ msgstr ""
 msgid "List doesn't matter"
 msgstr ""
 
-#: views/settings/security.php:60
+#: views/settings/security.php:78
 msgid "List domains which bypass the above rules. One domain each line."
 msgstr ""
 
@@ -3606,7 +3625,7 @@ msgstr ""
 msgid "Listnames"
 msgstr ""
 
-#: classes/forms.class.php:284 classes/settings.class.php:249
+#: classes/forms.class.php:284 classes/settings.class.php:251
 #: classes/notification.class.php:714 classes/lists.class.php:21
 #: classes/manage.class.php:345 classes/manage.class.php:1002
 #: classes/lists.table.class.php:14 classes/form.class.php:473
@@ -3639,7 +3658,7 @@ msgstr ""
 msgid "Load more entries (%s left)"
 msgstr ""
 
-#: classes/settings.class.php:398
+#: classes/settings.class.php:400
 msgid "Loading"
 msgstr ""
 
@@ -3807,7 +3826,7 @@ msgid ""
 "remove all campaigns, subscribers, actions and other data in your database."
 msgstr ""
 
-#: includes/functions.php:1166
+#: includes/functions.php:1177
 #, possible-php-format
 msgid "Mailster has been updated to %s."
 msgstr ""
@@ -3821,7 +3840,7 @@ msgstr ""
 msgid "Mailster is available in your language!"
 msgstr ""
 
-#: classes/queue.class.php:1192
+#: classes/queue.class.php:1193
 #, possible-php-format
 msgid ""
 "Mailster is not able to send your campaign cause of a server timeout. Please "
@@ -3885,7 +3904,7 @@ msgstr ""
 msgid "Max Execution Time"
 msgstr ""
 
-#: classes/queue.class.php:1192 views/settings/delivery.php:98
+#: classes/queue.class.php:1193 views/settings/delivery.php:98
 msgid "Max. Execution Time"
 msgstr ""
 
@@ -3907,7 +3926,7 @@ msgctxt "add-ons"
 msgid "Membership"
 msgstr ""
 
-#: classes/lists.table.class.php:163
+#: classes/lists.table.class.php:171
 msgid "Merge selected Lists"
 msgstr ""
 
@@ -4047,7 +4066,7 @@ msgstr ""
 msgid "New Comments"
 msgstr ""
 
-#: classes/settings.class.php:720
+#: classes/settings.class.php:722
 msgid "New DKIM keys have been created!"
 msgstr ""
 
@@ -4082,8 +4101,8 @@ msgstr ""
 msgid "New version available."
 msgstr ""
 
-#: classes/privacy.class.php:28 classes/settings.class.php:362
-#: classes/settings.class.php:365 classes/dashboard.class.php:257
+#: classes/privacy.class.php:28 classes/settings.class.php:364
+#: classes/settings.class.php:367 classes/dashboard.class.php:257
 #: classes/campaigns.class.php:232 includes/static.php:7
 msgid "Newsletter"
 msgstr ""
@@ -4101,7 +4120,7 @@ msgstr ""
 msgid "Newsletter List"
 msgstr ""
 
-#: classes/settings.class.php:356 views/settings.php:15
+#: classes/settings.class.php:358 views/settings.php:15
 msgid "Newsletter Settings"
 msgstr ""
 
@@ -4194,7 +4213,7 @@ msgstr ""
 msgid "No custom date fields found!"
 msgstr ""
 
-#: classes/settings.class.php:677
+#: classes/settings.class.php:679
 msgid "No data to import"
 msgstr ""
 
@@ -4277,7 +4296,7 @@ msgstr ""
 msgid "Not Verified"
 msgstr ""
 
-#: classes/settings.class.php:1117
+#: classes/settings.class.php:1125
 #, possible-php-format
 msgid ""
 "Not able to connected to %1$s via port %2$s! You may not be able to send "
@@ -4298,7 +4317,7 @@ msgid ""
 "Not able to create module screen shots of %1$s. Read more about this %2$s."
 msgstr ""
 
-#: classes/settings.class.php:729
+#: classes/settings.class.php:731
 msgid "Not able to create new DKIM keys!"
 msgstr ""
 
@@ -4310,7 +4329,7 @@ msgstr ""
 msgid "Not able to save file!"
 msgstr ""
 
-#: classes/settings.class.php:880
+#: classes/settings.class.php:882
 #, possible-php-format
 msgid "Not able to set archive slug to %1$s. Used by %2$s"
 msgstr ""
@@ -4349,7 +4368,7 @@ msgstr ""
 msgid "Notification"
 msgstr ""
 
-#: classes/queue.class.php:1288
+#: classes/queue.class.php:1289
 #, possible-php-format
 msgid "Notification %1$s has thrown an error: %2$s"
 msgstr ""
@@ -4400,12 +4419,8 @@ msgstr ""
 msgid "Offer share option for your customers"
 msgstr ""
 
-#: classes/helper.class.php:1938 views/setup.php:532
+#: classes/helper.class.php:1941 views/setup.php:532
 msgid "Ok, got it!"
-msgstr ""
-
-#: classes/addons.class.php:278
-msgid "Old addon files will be preserved in the addons folder."
 msgstr ""
 
 #: classes/templates.class.php:748
@@ -4432,11 +4447,16 @@ msgid ""
 "Only affects Campaigns and Auto responders but not transactional emails."
 msgstr ""
 
+#: views/settings/security.php:62 views/settings/security.php:70
+#, possible-php-format
+msgid "Only use 2 digit country codes following the %s standard."
+msgstr ""
+
 #: views/settings/security.php:14
 msgid "Only works if double-opt-in is enabled and the user is not logged in."
 msgstr ""
 
-#: classes/settings.class.php:429
+#: classes/settings.class.php:431
 msgid "Ooops, looks like your settings are missing or broken :("
 msgstr ""
 
@@ -4460,11 +4480,11 @@ msgstr ""
 msgid "Optional if a real cron service is used"
 msgstr ""
 
-#: classes/settings.class.php:396 classes/campaigns.class.php:345
+#: classes/settings.class.php:398 classes/campaigns.class.php:345
 msgid "Options"
 msgstr ""
 
-#: classes/settings.class.php:478
+#: classes/settings.class.php:480
 msgid "Options have been reset!"
 msgstr ""
 
@@ -4513,7 +4533,7 @@ msgstr ""
 msgid "Pagination"
 msgstr ""
 
-#: classes/settings.class.php:1655 views/settings/bounce.php:49
+#: classes/settings.class.php:1663 views/settings/bounce.php:49
 #: views/newsletter/submit.php:27
 msgid "Password"
 msgstr ""
@@ -4584,7 +4604,7 @@ msgstr ""
 msgid "Please add your first condition."
 msgstr ""
 
-#: classes/settings.class.php:865
+#: classes/settings.class.php:867
 #, possible-php-format
 msgid ""
 "Please change the slug or permalink of %s since it's used by the archive page"
@@ -4607,7 +4627,7 @@ msgstr ""
 msgid "Please confirm your Email Address"
 msgstr ""
 
-#: classes/settings.class.php:239
+#: classes/settings.class.php:241
 msgid "Please confirm your subscription!"
 msgstr ""
 
@@ -4615,7 +4635,7 @@ msgstr ""
 msgid "Please continue by clicking the button."
 msgstr ""
 
-#: classes/settings.class.php:832
+#: classes/settings.class.php:834
 #, possible-php-format
 msgid "Please define a homepage for the newsletter on the %s tab!"
 msgstr ""
@@ -4628,12 +4648,12 @@ msgstr ""
 msgid "Please describe why you're deactivating Mailster."
 msgstr ""
 
-#: classes/settings.class.php:1069
+#: classes/settings.class.php:1077
 #, possible-php-format
 msgid "Please either lower the %s or increase the Cron Interval."
 msgstr ""
 
-#: classes/settings.class.php:1066
+#: classes/settings.class.php:1074
 #, possible-php-format
 msgid "Please either lower the %s or increase your Cron Interval."
 msgstr ""
@@ -4642,10 +4662,6 @@ msgstr ""
 msgid ""
 "Please enter a valid Google API key on the settings page if the map is "
 "missing!"
-msgstr ""
-
-#: classes/addons.class.php:263
-msgid "Please enter the name of the new addon."
 msgstr ""
 
 #: classes/templates.class.php:738
@@ -4660,7 +4676,7 @@ msgstr ""
 msgid "Please enter your Twitter application credentials on the settings page"
 msgstr ""
 
-#: classes/settings.class.php:259
+#: classes/settings.class.php:261
 msgid "Please enter your email address"
 msgstr ""
 
@@ -4680,7 +4696,7 @@ msgstr ""
 msgid "Please make sure all your campaigns are imported correctly!"
 msgstr ""
 
-#: classes/addons.class.php:300
+#: classes/addons.class.php:293
 msgid ""
 "Please make sure you have signed in to the account you have purchased the "
 "addon!"
@@ -4815,11 +4831,11 @@ msgid ""
 "frame."
 msgstr ""
 
-#: classes/queue.class.php:1207
+#: classes/queue.class.php:1208
 msgid "Prevent to send duplicate within one minute."
 msgstr ""
 
-#: classes/widget.class.php:383 classes/forms.table.class.php:182
+#: classes/widget.class.php:383 classes/forms.table.class.php:191
 #: classes/campaigns.class.php:1460
 msgid "Preview"
 msgstr ""
@@ -4879,11 +4895,11 @@ msgstr ""
 msgid "Profile Update"
 msgstr ""
 
-#: classes/upgrade.class.php:2174
+#: classes/upgrade.class.php:2178
 msgid "Profile Updated!"
 msgstr ""
 
-#: classes/settings.class.php:245
+#: classes/settings.class.php:247
 msgid "Profile updated!"
 msgstr ""
 
@@ -4932,7 +4948,7 @@ msgstr ""
 msgid "RSS Feeds"
 msgstr ""
 
-#: classes/settings.class.php:389 views/settings/subscribers.php:78
+#: classes/settings.class.php:391 views/settings/subscribers.php:78
 msgid "Radio Buttons"
 msgstr ""
 
@@ -5147,7 +5163,7 @@ msgstr ""
 msgid "Reset all settings"
 msgstr ""
 
-#: classes/settings.class.php:431
+#: classes/settings.class.php:433
 msgid "Reset all settings now"
 msgstr ""
 
@@ -5204,7 +5220,7 @@ msgid ""
 "change your delivery method or try %s"
 msgstr ""
 
-#: views/settings/security.php:58
+#: views/settings/security.php:76
 msgid "Safe Domains"
 msgstr ""
 
@@ -5248,7 +5264,7 @@ msgstr ""
 msgid "Save as draft"
 msgstr ""
 
-#: classes/settings.class.php:397
+#: classes/settings.class.php:399
 msgid "Save to Test"
 msgstr ""
 
@@ -5323,7 +5339,7 @@ msgstr ""
 msgid "Secure"
 msgstr ""
 
-#: classes/settings.class.php:1629
+#: classes/settings.class.php:1637
 msgid "Secure connection"
 msgstr ""
 
@@ -5374,7 +5390,7 @@ msgstr ""
 msgid "Selector Prefix"
 msgstr ""
 
-#: classes/settings.class.php:1659
+#: classes/settings.class.php:1667
 msgid "Self Signed Certificates"
 msgstr ""
 
@@ -5427,7 +5443,7 @@ msgstr ""
 msgid "Send max %s emails in one batch."
 msgstr ""
 
-#: classes/subscribers.table.class.php:281 classes/lists.table.class.php:164
+#: classes/subscribers.table.class.php:281 classes/lists.table.class.php:172
 msgid "Send new Campaign"
 msgstr ""
 
@@ -5453,7 +5469,7 @@ msgstr ""
 msgid "Sending Problem!"
 msgstr ""
 
-#: classes/settings.class.php:1595
+#: classes/settings.class.php:1603
 msgid ""
 "Sending via your host is not recommended. Please consider using a dedicate "
 "Email Service Provider instead."
@@ -5509,7 +5525,7 @@ msgstr ""
 msgid "Services"
 msgstr ""
 
-#: classes/forms.table.class.php:121 classes/settings.class.php:356
+#: classes/forms.table.class.php:130 classes/settings.class.php:358
 #: classes/mailster.class.php:1158 views/forms/detail.php:90
 msgid "Settings"
 msgstr ""
@@ -5518,11 +5534,11 @@ msgstr ""
 msgid "Settings Page"
 msgstr ""
 
-#: classes/settings.class.php:1400
+#: classes/settings.class.php:1408
 msgid "Settings are the same. Nothing to import!"
 msgstr ""
 
-#: classes/settings.class.php:690
+#: classes/settings.class.php:692
 msgid "Settings imported!"
 msgstr ""
 
@@ -5626,7 +5642,7 @@ msgstr ""
 msgid "Sign Up form for the newsletter"
 msgstr ""
 
-#: classes/settings.class.php:242 includes/updates.php:164
+#: classes/settings.class.php:244 includes/updates.php:164
 msgid "Sign up to our newsletter"
 msgstr ""
 
@@ -5744,6 +5760,10 @@ msgstr ""
 msgid "Sorry, you cannot signup right now."
 msgstr ""
 
+#: classes/security.class.php:113 classes/security.class.php:117
+msgid "Sorry, you cannot signup with right now."
+msgstr ""
+
 #: classes/security.class.php:53 classes/security.class.php:63
 #: classes/security.class.php:73 classes/security.class.php:97
 msgid "Sorry, you cannot signup with this email address."
@@ -5857,7 +5877,7 @@ msgstr ""
 
 #: classes/tinymce.class.php:192 classes/forms.class.php:1495
 #: classes/forms.class.php:1511 classes/widget.class.php:430
-#: classes/widget.class.php:511 classes/settings.class.php:250
+#: classes/widget.class.php:511 classes/settings.class.php:252
 #: includes/updates.php:38
 msgid "Subscribe"
 msgstr ""
@@ -5870,7 +5890,7 @@ msgstr ""
 msgid "Subscribe new users to"
 msgstr ""
 
-#: classes/lists.table.class.php:161
+#: classes/lists.table.class.php:169
 msgid "Subscribe subscribers"
 msgstr ""
 
@@ -6013,7 +6033,7 @@ msgstr ""
 msgid "TXT record found"
 msgstr ""
 
-#: classes/tinymce.class.php:148 classes/settings.class.php:384
+#: classes/tinymce.class.php:148 classes/settings.class.php:386
 #: views/addons.php:23 views/settings/subscribers.php:88 views/templates.php:27
 msgid "Tag"
 msgstr ""
@@ -6145,15 +6165,15 @@ msgstr ""
 msgid "Text before the form"
 msgstr ""
 
-#: classes/settings.class.php:387 views/settings/subscribers.php:76
+#: classes/settings.class.php:389 views/settings/subscribers.php:76
 msgid "Textarea"
 msgstr ""
 
-#: classes/settings.class.php:386 views/settings/subscribers.php:75
+#: classes/settings.class.php:388 views/settings/subscribers.php:75
 msgid "Textfield"
 msgstr ""
 
-#: classes/settings.class.php:481
+#: classes/settings.class.php:483
 msgid "Texts have been reset!"
 msgstr ""
 
@@ -6163,7 +6183,7 @@ msgctxt "Your language"
 msgid "Thanks for using Mailster in %s!"
 msgstr ""
 
-#: classes/tinymce.class.php:184 classes/settings.class.php:240
+#: classes/tinymce.class.php:184 classes/settings.class.php:242
 #: includes/static.php:11
 msgid "Thanks for your interest!"
 msgstr ""
@@ -6229,7 +6249,7 @@ msgstr ""
 msgid "The area in which content gets placed."
 msgstr ""
 
-#: classes/settings.class.php:1169
+#: classes/settings.class.php:1177
 #, possible-php-format
 msgid "The caching time for tweets must be at least %d minutes"
 msgstr ""
@@ -6242,7 +6262,7 @@ msgstr ""
 msgid "The content folder is not writeable"
 msgstr ""
 
-#: classes/settings.class.php:1411 classes/settings.class.php:1418
+#: classes/settings.class.php:1419 classes/settings.class.php:1426
 msgid "The data does't look like valid settings!"
 msgstr ""
 
@@ -6268,7 +6288,7 @@ msgid ""
 "The email was not sent. Please check your delivery settings and try again."
 msgstr ""
 
-#: classes/helper.class.php:1605
+#: classes/helper.class.php:1608
 #, possible-php-format
 msgid "The feed only contains %d items"
 msgstr ""
@@ -6309,7 +6329,7 @@ msgstr ""
 msgid "The sender name which is displayed in the from field"
 msgstr ""
 
-#: classes/helper.class.php:1561
+#: classes/helper.class.php:1564
 #, possible-php-format
 msgid "The server responded with error code %d."
 msgstr ""
@@ -6364,7 +6384,7 @@ msgstr ""
 msgid "The user updated the status via the profile page."
 msgstr ""
 
-#: classes/settings.class.php:1428
+#: classes/settings.class.php:1436
 msgid "The version number of the import does not match!"
 msgstr ""
 
@@ -6390,7 +6410,7 @@ msgid ""
 "for more information!"
 msgstr ""
 
-#: classes/settings.class.php:319
+#: classes/settings.class.php:321
 #, possible-php-format
 msgid ""
 "There was a problem in your Mailster settings which has been automatically "
@@ -6456,7 +6476,7 @@ msgstr ""
 msgid "There was an error while updating the form: %s"
 msgstr ""
 
-#: classes/helper.class.php:1566
+#: classes/helper.class.php:1569
 #, possible-php-format
 msgid "There's a problem receiving the feed from `%1$s`: %2$s"
 msgstr ""
@@ -6546,7 +6566,7 @@ msgstr ""
 msgid "This form does not exist or has been deleted!"
 msgstr ""
 
-#: classes/forms.table.class.php:113
+#: classes/forms.table.class.php:122
 msgid "This form is used for user profile updates"
 msgstr ""
 
@@ -6781,7 +6801,7 @@ msgid ""
 "with special characters."
 msgstr ""
 
-#: classes/settings.class.php:385 views/settings/subscribers.php:89
+#: classes/settings.class.php:387 views/settings/subscribers.php:89
 msgid "Type"
 msgstr ""
 
@@ -6844,7 +6864,7 @@ msgstr ""
 msgid "Unsubscribe Text"
 msgstr ""
 
-#: classes/lists.table.class.php:162
+#: classes/lists.table.class.php:170
 msgid "Unsubscribe subscribers"
 msgstr ""
 
@@ -6879,7 +6899,7 @@ msgstr ""
 msgid "Update Newsletter Homepage"
 msgstr ""
 
-#: classes/settings.class.php:251 classes/upgrade.class.php:2175
+#: classes/settings.class.php:253 classes/upgrade.class.php:2179
 #: classes/form.class.php:709
 msgid "Update Profile"
 msgstr ""
@@ -6928,7 +6948,7 @@ msgstr ""
 msgid "Updating Mailster tables for Campaign %s:"
 msgstr ""
 
-#: classes/templates.class.php:742 classes/addons.class.php:269
+#: classes/templates.class.php:742 classes/addons.class.php:266
 msgid "Updating..."
 msgstr ""
 
@@ -7128,7 +7148,7 @@ msgstr ""
 msgid "User: %1$s - %2$s"
 msgstr ""
 
-#: classes/settings.class.php:1651 classes/register.class.php:75
+#: classes/settings.class.php:1659 classes/register.class.php:75
 #: views/settings/bounce.php:45
 msgid "Username"
 msgstr ""
@@ -7192,7 +7212,7 @@ msgstr ""
 msgid "View details"
 msgstr ""
 
-#: classes/templates.class.php:775 classes/addons.class.php:305
+#: classes/templates.class.php:775 classes/addons.class.php:298
 msgid "Visit Envato Account"
 msgstr ""
 
@@ -7214,7 +7234,7 @@ msgid ""
 "Warnings are recommended to get fixed but not required to make Mailster work."
 msgstr ""
 
-#: classes/templates.class.php:1113 classes/addons.class.php:397
+#: classes/templates.class.php:1113 classes/addons.class.php:390
 msgid ""
 "We are currently not able to handle your request. Please try again later."
 msgstr ""
@@ -7374,19 +7394,14 @@ msgstr ""
 msgid "Yes, let me help you by enabling this option!"
 msgstr ""
 
-#: classes/settings.class.php:252 includes/updates.php:39
+#: classes/settings.class.php:254 includes/updates.php:39
 msgid "Yes, unsubscribe me"
 msgstr ""
 
-#: classes/settings.class.php:403
+#: classes/settings.class.php:405
 msgid ""
 "You are about to create new DKIM keys. The old ones will get deleted. "
 "Continue?"
-msgstr ""
-
-#: classes/addons.class.php:276
-#, possible-php-format
-msgid "You are about to delete file %1$s from addon %2$s."
 msgstr ""
 
 #: classes/templates.class.php:745
@@ -7400,19 +7415,9 @@ msgid ""
 "irreversible!"
 msgstr ""
 
-#: classes/addons.class.php:275
-#, possible-php-format
-msgid "You are about to delete this addon %s."
-msgstr ""
-
 #: classes/templates.class.php:744
 #, possible-php-format
 msgid "You are about to delete this template %s."
-msgstr ""
-
-#: classes/addons.class.php:277
-#, possible-php-format
-msgid "You are about to make %s your default addon."
 msgstr ""
 
 #: classes/templates.class.php:746
@@ -7420,33 +7425,29 @@ msgstr ""
 msgid "You are about to make %s your default template."
 msgstr ""
 
-#: classes/settings.class.php:407
+#: classes/settings.class.php:409
 msgid ""
 "You are about to overwrite all WordPress User data with the matching "
 "subscriber data. Continue?"
 msgstr ""
 
-#: classes/settings.class.php:406
+#: classes/settings.class.php:408
 msgid ""
 "You are about to overwrite all subscriber data with the matching WordPress "
 "User data. Continue?"
 msgstr ""
 
-#: classes/settings.class.php:404
+#: classes/settings.class.php:406
 msgid ""
 "You are about to overwrite your exists settings with new ones. The old ones "
 "will get deleted. Continue?"
-msgstr ""
-
-#: classes/addons.class.php:278
-msgid "You are about to update your exiting addon files with a new version!"
 msgstr ""
 
 #: classes/templates.class.php:748
 msgid "You are about to update your exiting template files with a new version!"
 msgstr ""
 
-#: classes/settings.class.php:257
+#: classes/settings.class.php:259
 msgid "You are already registered"
 msgstr ""
 
@@ -7531,12 +7532,12 @@ msgid ""
 "unsubscriptions %s"
 msgstr ""
 
-#: classes/settings.class.php:1069
+#: classes/settings.class.php:1077
 #, possible-php-format
 msgid "You are trying to send %1$s mails per seconds (%2$s every %3$s)."
 msgstr ""
 
-#: classes/settings.class.php:1066
+#: classes/settings.class.php:1074
 #, possible-php-format
 msgid ""
 "You are trying to send %1$s mails per seconds (%2$s within %3$s) but your "
@@ -7639,14 +7640,14 @@ msgstr ""
 msgid "You have now %s subscribers in total."
 msgstr ""
 
-#: classes/settings.class.php:154
+#: classes/settings.class.php:156
 #, possible-php-format
 msgid ""
 "You have received this email because you have subscribed to %s as {email}. "
 "If you no longer wish to receive emails please {unsub}."
 msgstr ""
 
-#: classes/settings.class.php:243
+#: classes/settings.class.php:245
 msgid "You have successfully unsubscribed!"
 msgstr ""
 
@@ -7663,7 +7664,7 @@ msgstr ""
 msgid "You have to accept the terms of service."
 msgstr ""
 
-#: classes/settings.class.php:261
+#: classes/settings.class.php:263
 msgid "You have to agree to the privacy policy and terms!"
 msgstr ""
 
@@ -7678,7 +7679,7 @@ msgstr ""
 msgid "You have to enable Custom fields for each form:"
 msgstr ""
 
-#: classes/settings.class.php:1176
+#: classes/settings.class.php:1184
 msgid "You have to generate DKIM Keys to use DKIM signed mails!"
 msgstr ""
 
@@ -7802,7 +7803,7 @@ msgstr ""
 msgid "Your name"
 msgstr ""
 
-#: classes/settings.class.php:885
+#: classes/settings.class.php:887
 #, possible-php-format
 msgid "Your newsletter archive page is: %s"
 msgstr ""
@@ -7829,11 +7830,11 @@ msgstr ""
 msgid "Your purchase code is invalid."
 msgstr ""
 
-#: classes/settings.class.php:1224
+#: classes/settings.class.php:1232
 msgid "Your server is not able to do a DNS lookup. MX check disabled."
 msgstr ""
 
-#: classes/settings.class.php:1233
+#: classes/settings.class.php:1241
 msgid "Your server is not able to validate via SMTP. SMTP check disabled."
 msgstr ""
 
@@ -7901,13 +7902,13 @@ msgstr ""
 msgid "active"
 msgstr ""
 
-#: classes/settings.class.php:382 views/settings/tags.php:34
+#: classes/settings.class.php:384 views/settings/tags.php:34
 #: views/settings/wordpress-users.php:48 views/settings/subscribers.php:129
 #: views/settings/template.php:55
 msgid "add"
 msgstr ""
 
-#: classes/settings.class.php:395 views/settings/subscribers.php:112
+#: classes/settings.class.php:397 views/settings/subscribers.php:112
 msgid "add field"
 msgstr ""
 
@@ -7962,7 +7963,7 @@ msgstr ""
 msgid "allow multiple triggers"
 msgstr ""
 
-#: classes/settings.class.php:1660
+#: classes/settings.class.php:1668
 msgid "allow self signed certificates"
 msgstr ""
 
@@ -8097,7 +8098,7 @@ msgid ""
 "characters"
 msgstr ""
 
-#: classes/forms.table.class.php:120
+#: classes/forms.table.class.php:129
 msgid "change design"
 msgstr ""
 
@@ -8109,7 +8110,7 @@ msgstr ""
 msgid "change language of texts if available to"
 msgstr ""
 
-#: classes/forms.table.class.php:121
+#: classes/forms.table.class.php:130
 msgid "change settings"
 msgstr ""
 
@@ -8117,7 +8118,7 @@ msgstr ""
 msgid "change status"
 msgstr ""
 
-#: classes/forms.table.class.php:119
+#: classes/forms.table.class.php:128
 msgid "change structure"
 msgstr ""
 
@@ -8146,7 +8147,7 @@ msgstr ""
 msgid "checked %s ago"
 msgstr ""
 
-#: classes/settings.class.php:393 views/settings/wordpress-users.php:103
+#: classes/settings.class.php:395 views/settings/wordpress-users.php:103
 #: views/settings/wordpress-users.php:124 views/settings/subscribers.php:119
 #: views/forms/detail.php:354
 msgid "checked by default"
@@ -8328,7 +8329,7 @@ msgstr ""
 msgid "deactivate"
 msgstr ""
 
-#: classes/widget.class.php:540 classes/settings.class.php:392
+#: classes/widget.class.php:540 classes/settings.class.php:394
 #: views/settings/subscribers.php:106
 msgid "default"
 msgstr ""
@@ -8470,7 +8471,7 @@ msgstr ""
 msgid "doesn't match regex pattern"
 msgstr ""
 
-#: classes/forms.table.class.php:122
+#: classes/forms.table.class.php:131
 msgid "duplicate Form"
 msgstr ""
 
@@ -8576,7 +8577,7 @@ msgstr ""
 msgid "format number"
 msgstr ""
 
-#: classes/settings.class.php:255 classes/upgrade.class.php:2176
+#: classes/settings.class.php:257 classes/upgrade.class.php:2180
 #: includes/updates.php:68
 msgid "forward to a friend"
 msgstr ""
@@ -8953,11 +8954,11 @@ msgstr ""
 msgid "more"
 msgstr ""
 
-#: classes/settings.class.php:401 views/settings/subscribers.php:86
+#: classes/settings.class.php:403 views/settings/subscribers.php:86
 msgid "move down"
 msgstr ""
 
-#: classes/settings.class.php:400 views/settings/subscribers.php:85
+#: classes/settings.class.php:402 views/settings/subscribers.php:85
 msgid "move up"
 msgstr ""
 
@@ -9047,7 +9048,7 @@ msgstr ""
 msgid "no warmup"
 msgstr ""
 
-#: classes/settings.class.php:1632 classes/settings.class.php:1643
+#: classes/settings.class.php:1640 classes/settings.class.php:1651
 #: views/settings/bounce.php:39
 msgid "none"
 msgstr ""
@@ -9173,7 +9174,7 @@ msgid "opens"
 msgstr ""
 
 #: classes/helper.class.php:615 classes/templates.class.php:775
-#: classes/addons.class.php:305 classes/conditions.class.php:311
+#: classes/addons.class.php:298 classes/conditions.class.php:311
 #: classes/conditions.class.php:313 classes/conditions.class.php:316
 #: classes/conditions.class.php:322 classes/conditions.class.php:327
 #: classes/conditions.class.php:333 classes/conditions.class.php:444
@@ -9338,7 +9339,7 @@ msgstr ""
 msgid "remove element"
 msgstr ""
 
-#: classes/settings.class.php:399 views/settings/subscribers.php:107
+#: classes/settings.class.php:401 views/settings/subscribers.php:107
 #: views/settings/subscribers.php:123 views/forms/detail.php:116
 #: views/forms/detail.php:149
 msgid "remove field"
@@ -9420,7 +9421,7 @@ msgctxt "short for second"
 msgid "sec"
 msgstr ""
 
-#: classes/settings.class.php:1626 views/settings/delivery.php:99
+#: classes/settings.class.php:1634 views/settings/delivery.php:99
 #: views/settings/security.php:20
 msgid "seconds"
 msgstr ""
@@ -9495,7 +9496,7 @@ msgstr ""
 msgid "set an end date for your campaign"
 msgstr ""
 
-#: classes/queue.class.php:1192 classes/cron.class.php:205
+#: classes/queue.class.php:1193 classes/cron.class.php:205
 #: classes/cron.class.php:208
 msgid "settings page"
 msgstr ""
@@ -9614,7 +9615,7 @@ msgstr ""
 msgid "the second latest"
 msgstr ""
 
-#: classes/settings.class.php:319
+#: classes/settings.class.php:321
 msgid "the settings page"
 msgstr ""
 
@@ -9647,7 +9648,7 @@ msgstr ""
 msgid "third party content type settings."
 msgstr ""
 
-#: classes/settings.class.php:394 views/settings/subscribers.php:105
+#: classes/settings.class.php:396 views/settings/subscribers.php:105
 #: views/settings/subscribers.php:118
 msgid "this field is selected by default"
 msgstr ""
@@ -9667,7 +9668,7 @@ msgstr ""
 msgid "time frame settings"
 msgstr ""
 
-#: classes/queue.class.php:1190
+#: classes/queue.class.php:1191
 msgid "timeout reached"
 msgstr ""
 
@@ -9707,7 +9708,7 @@ msgstr ""
 msgid "unconfirm list"
 msgstr ""
 
-#: classes/forms.table.class.php:110 classes/tags.class.php:74
+#: classes/forms.table.class.php:119 classes/tags.class.php:74
 #: classes/lists.class.php:363
 msgid "undefined"
 msgstr ""
@@ -9716,7 +9717,7 @@ msgstr ""
 msgid "undo"
 msgstr ""
 
-#: classes/forms.table.class.php:172 classes/campaigns.class.php:4609
+#: classes/forms.table.class.php:181 classes/campaigns.class.php:4609
 #: classes/subscribers.table.class.php:227 classes/notification.class.php:507
 #: classes/ajax.class.php:1132 views/subscribers/detail.php:54
 #: views/subscribers/detail.php:159 views/subscribers/detail.php:173
@@ -9744,7 +9745,7 @@ msgctxt "unsubscribe slug"
 msgid "unsubscribe"
 msgstr ""
 
-#: classes/settings.class.php:253
+#: classes/settings.class.php:255
 msgctxt "unsubscribelink"
 msgid "unsubscribe"
 msgstr ""
@@ -9779,7 +9780,7 @@ msgstr ""
 msgid "until %s"
 msgstr ""
 
-#: classes/settings.class.php:256 classes/upgrade.class.php:2177
+#: classes/settings.class.php:258 classes/upgrade.class.php:2181
 msgid "update profile"
 msgstr ""
 
@@ -9800,7 +9801,7 @@ msgstr ""
 msgid "upload templates"
 msgstr ""
 
-#: classes/templates.class.php:739 classes/addons.class.php:264
+#: classes/templates.class.php:739
 #, possible-php-format
 msgid "uploading zip file %s"
 msgstr ""
@@ -9888,7 +9889,7 @@ msgstr ""
 msgid "visit"
 msgstr ""
 
-#: classes/settings.class.php:254 includes/updates.php:41
+#: classes/settings.class.php:256 includes/updates.php:41
 msgid "webversion"
 msgstr ""
 

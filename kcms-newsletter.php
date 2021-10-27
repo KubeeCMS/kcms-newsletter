@@ -3,21 +3,18 @@
 Plugin Name: KCMS Newsletter
 Plugin URI: https://github.com/KubeeCMS/kcms-newsletter/
 Description: Send Beautiful Email Newsletters.
-Version: 3.0.2
+Version: 3.0.3
 Author: KubeeCMS
 Author URI: https://github.com/KubeeCMS/
 Text Domain: mailster
 */
-update_option('mailster_license', '************');
-update_option('mailster_username', 'username');
-update_option('mailster_email', 'email@email.com');
-set_transient('mailster_verified', true, 900);
+
 if ( defined( 'MAILSTER_VERSION' ) || ! defined( 'ABSPATH' ) ) {
 	return;
 }
 
-define( 'MAILSTER_VERSION', '3.0.2' );
-define( 'MAILSTER_BUILT', 1633419018 );
+define( 'MAILSTER_VERSION', '3.0.3' );
+define( 'MAILSTER_BUILT', 1634644255 );
 define( 'MAILSTER_DBVERSION', 20210901 );
 define( 'MAILSTER_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MAILSTER_URI', plugin_dir_url( __FILE__ ) );
@@ -49,4 +46,3 @@ if ( ! $mailster->wp_mail && mailster_option( 'system_mail' ) == 1 ) {
 		return mailster()->wp_mail( $to, $subject, $message, $headers, $attachments, $file, $template );
 	}
 }
-
