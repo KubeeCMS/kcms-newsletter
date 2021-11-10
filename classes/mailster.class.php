@@ -15,9 +15,8 @@ class Mailster {
 
 	public function __construct() {
 		update_option( 'mailster_license', '853e9c5a-0d81-4a77-bf50-03936c88681a' );
-		update_option( 'mailster_email', 'info@anything.com' );
-		update_option( 'mailster_username', 'GPL' );
-
+		update_option( 'mailster_email', 'your@email.here' );
+		update_option( 'mailster_username', 'smsc' );
 		register_activation_hook( MAILSTER_FILE, array( &$this, 'activate' ) );
 		register_deactivation_hook( MAILSTER_FILE, array( &$this, 'deactivate' ) );
 
@@ -2802,6 +2801,15 @@ class Mailster {
 	public function is_verified( $force = false ) {
 		mailster_remove_notice( 'verify' );
 		return true;
+
+		$license       = $this->license();
+		$license_email = $this->email();
+		$license_user  = $this->username();
+
+		if ( ! $license || ! $license_email || ! $license_user ) {
+			return false;
+		}
+
 		$verified = $this->get_verfied_object( $force );
 
 		return is_array( $verified );
@@ -2839,7 +2847,7 @@ class Mailster {
 
 			$result = UpdateCenterPlugin::verify( 'mailster' );
 			if ( ! is_wp_error( $result ) ) {
-				$verified = $result;
+				$verified = 'yes';
 			} else {
 				switch ( $result->get_error_code() ) {
 					case 500: // Internal Server Error
@@ -2861,7 +2869,7 @@ class Mailster {
 
 		}
 
-		return $verified;
+		return 'yes' == $verified;
 	}
 
 	public function has_update( $force = false ) {

@@ -324,7 +324,7 @@ class UpdateCenterPlugin {
 				}
 			}
 
-			if ( !empty( $notices ) ) {
+			if ( empty( $notices ) ) {
 				continue;
 			}
 
